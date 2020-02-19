@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Description rdf:ID="ID_string">
+      <ns_1:prop_1>ID value</ns_1:prop_1>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="relative_about">
+      <ns_1:prop_2>about value</ns_1:prop_2>
+    </rdf:Description>
+
+    <rdf:Bag rdf:ID="some_bag">
+      <rdf:li rdf:resource="relative_resource"/>
+    </rdf:Bag>
+
+  </rdf:RDF>

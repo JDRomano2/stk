@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!--
+
+ The following RDF is not legal - if a propertyElt contains content and
+ it also has a parseType attribute with a value of "Literal" or "Resource" 
+ then the only other attribute that the propertElt may have is ID.
+
+-->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description about="http://www.w3.org/RDF/Implementations/SiRPAC/">
+    <dc:creator rdf:about="http://www.w3.org/People/Janne/" 
+                rdf:parseType="Resource">
+    </dc:creator>
+  </rdf:Description>
+</rdf:RDF>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Name: 
+
+SiRPAC incorrectly reifies a Description
+element within any container (Seq, Alt or Bag).
+-->
+<rdf:RDF xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns_1 = "http://www.ns_1.org/a#">
+
+<rdf:Alt>
+  <rdf:li>
+      <rdf:Description>
+      <ns_1:p_2>some text</ns_1:p_2>
+      </rdf:Description>
+  </rdf:li>
+</rdf:Alt>
+
+</rdf:RDF>

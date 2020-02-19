@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!--
+  The following is illegal RDF: the typedNode ns_1:prop_1 may only 
+  contain a propertyElt thus the PCDATA in this typedNode is illegal.
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+  <rdf:Description>
+    <ns_1:creator>
+      <ns_1:prop_1>prop_1 value</ns_1:prop_1>
+    </ns_1:creator>
+  </rdf:Description>
+
+
+</rdf:RDF>

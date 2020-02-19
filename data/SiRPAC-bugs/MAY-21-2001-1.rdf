@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+     If a list element within a container contains an
+     propertyElt with a parseType='Resource', SiRPAC
+     generates an error even though this is valid syntax.
+     The problem seems to be that SiRPAC things the container
+     is a typedNode.
+  -->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns="http://example.org/#">
+
+ <rdf:Alt>
+  <rdf:li parseType='Resource'>
+    <ns:att rdf:resource="http://example.org/some_resource"/>
+  </rdf:li>
+ </rdf:Alt>
+
+</rdf:RDF>

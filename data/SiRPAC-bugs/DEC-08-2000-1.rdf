@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:pc = "http://pc.org/">
+
+<rdf:Description rdf:ID = "Computer">
+        <pc:Part>
+                <rdf:Description about = "#Printer"/>
+        </pc:Part>
+</rdf:Description>
+
+<rdf:Description rdf:ID="Printer">
+        <pc:alias>
+                        <rdf:Description rdf:ID="print"/>
+        </pc:alias>
+</rdf:Description>
+
+</rdf:RDF>
+

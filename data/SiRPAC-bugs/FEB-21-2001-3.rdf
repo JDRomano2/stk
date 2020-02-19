@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!--
+  The object of the propertElt should be an empty string literal.
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+  <rdf:Description>
+    <ns_1:prop_1></ns_1:prop_1>
+  </rdf:Description>
+
+</rdf:RDF>

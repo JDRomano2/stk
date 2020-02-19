@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!-- Test for a rdf:resource propAttr on a Description element.
+     The rdf:resource propAttr should yield a triple.
+  -->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Description rdf:resource="resource_value_1" ns_1:propAttr1="propAttr1 value">
+      <ns_1:prop_1>prop1 value</ns_1:prop_1>
+    </rdf:Description>
+
+</rdf:RDF>

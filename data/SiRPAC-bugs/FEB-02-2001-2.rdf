@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--
+  When SirPAC tries to parse this it says
+  Fatal error: (Line number = -1, Column number = -1)
+  There is an error in the file: I forgot to close the last comment.
+
+  However, the error message gives line and column "-1" instead of the true 
+  position of the line.
+-->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:e="e/"
+ >
+
+  <!-- forget to close this ...
+
+  <rdf:Description about="#foo.gif" bagID="statement_1">
+    <e:alt_status rdf:resource="e:missing"/>
+  </rdf:Description>
+
+</rdf:RDF>

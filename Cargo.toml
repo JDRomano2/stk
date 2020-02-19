@@ -1,0 +1,10 @@
+[package]
+name = "stk"
+version = "0.1.0"
+authors = ["Joseph D. Romano <jdromano2@gmail.com>"]
+edition = "2018"
+
+description = "Semantic Toolkit - A high-performance scientific computing library for interacting with rich knowledge representations and large graph databases"
+
+[dependencies]
+serde = "1.0.104"

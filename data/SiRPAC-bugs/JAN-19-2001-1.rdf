@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<!-- Tests nested containers
+  -->
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:test="http://test/"
+>
+
+  <rdf:Bag rdf:about="http://foo">
+    <rdf:li>
+      <rdf:Seq rdf:about="http://bar">
+        <rdf:li>1</rdf:li>
+      </rdf:Seq>
+    </rdf:li>
+    <rdf:li>
+      <rdf:Seq rdf:about="http://baz">
+        <rdf:li>2</rdf:li>
+      </rdf:Seq>
+    </rdf:li>
+  </rdf:Bag>
+
+</rdf:RDF>

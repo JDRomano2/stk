@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!--
+  The following RDF is illegal - a Alt container [6.27]
+  must contain at least one member [6.28].
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Alt/>
+
+</rdf:RDF>

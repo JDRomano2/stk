@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     This RDF is used to test the servlet's handling of
+     Literals when the SVG graph format is selected.
+  -->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns_1="http://ns_1.org/" >
+
+  <rdf:Description about="some_resource">
+    <ns_1:prop_1 rdf:parseType="Literal">
+      <a href="some_where">go there</a>
+    </ns_1:prop_1>
+  </rdf:Description>
+
+</rdf:RDF>

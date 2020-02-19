@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!--
+  The following RDF is illegal because a propertyElt [6.12]
+  may only have content if it has an attribute of ID or
+  parseType.
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+  <rdf:Description>
+    <ns_1:creator rdf:resource="some_resource">string</ns_1:creator>
+  </rdf:Description>
+
+</rdf:RDF>

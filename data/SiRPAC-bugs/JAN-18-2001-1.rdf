@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!-- Test for a rdf:ID attribute in a propertyElt.  Version 1.0 of the M&S 
+     spec says:
+
+       [[
+         Within propertyElt (production [6.12]), the URI used in a resource 
+         attribute identifies (after resolution) the resource that is the object 
+         of the statement (i.e., the value of this property). The value of the 
+         ID attribute, if specified, is the identifier for the resource that 
+         represents the reification of the statement.
+       ]]
+
+     Consequently, the property prop_1 should be reified withe "prop1_ID" as
+     the subject.
+  -->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Description about="some_resource">
+      <ns_1:prop_1 rdf:ID="prop1_ID">prop1 value</ns_1:prop_1>
+    </rdf:Description>
+
+</rdf:RDF>

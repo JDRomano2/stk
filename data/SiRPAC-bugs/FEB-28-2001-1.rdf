@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+
+If RDF containing a tag like:
+
+  <ns_1:prop_1 xml:space='preserve'><![CDATA[<undefined>]]></ns_1:prop_1>
+
+the object of the triple is "<undefined" [note the missing '>' at
+the end] when it is displayed in the table.  Note, however that
+the '>' is included when the object is displayed in the graph.
+
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Description about="some_resource">
+      <ns_1:prop_1 xml:space='preserve'><![CDATA[<undefined>]]></ns_1:prop_1>
+    </rdf:Description>
+
+</rdf:RDF>

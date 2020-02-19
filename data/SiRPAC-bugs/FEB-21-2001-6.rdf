@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!--
+  The following RDF is illegal - a container [6.2{5,6,7}]
+  may only contain a ID attribute and/or a memberAttr [6.31]
+  attribute.
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Bag ns_1:prop_1="prop_1 value"/>
+
+</rdf:RDF>

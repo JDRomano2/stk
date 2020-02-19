@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE rdf:RDF SYSTEM "http://etbdemo.jrc.it/metadata/uni-c/etbmes.dtd">
+
+<!-- This test case was submitted to show that when SiRPAC creates
+     the subject triple during reification, the object of that
+     triple was a Literal and it should [always] be a Resource.
+  -->
+     
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:dc="http://dublincore.org/2000/03/13-dces#"
+xmlns:dcq="http://dublincore.org/2000/03/13-dcq#"
+xmlns:dct="http://dublincore.org/2000/03/13-dct#"
+xmlns:dcedu="http://dublincore.org/2000/08/22-dced#"
+xmlns:etb="http://eun.org/etb/elements/0.9/ "
+xmlns:etbthes="http://etbdemo.jrc.it/thesaurus/thes-0.2.rdfs#">
+<rdf:Description rdf:bagID="urn:rdf:etb:jrc:GM------000000000000338B">
+<dc:title rdf:parseType="Resource">
+<rdf:value>Building with Books.</rdf:value>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</dc:title>
+<dc:creator rdf:parseType="Resource">
+<rdf:value rdf:resource="mailto:bwb.mvaughn@gecapital.com" />
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</dc:creator>
+<dc:subject rdf:parseType="Resource">
+<etbthes:ETBT rdf:parseType="Resource">
+<rdf:value rdf:resource="http://etbdemo.jrc.it/thesaurus/eurydice/en/education" />
+<rdfs:label>education</rdfs:label>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</etbthes:ETBT>
+</dc:subject>
+<etb:Keywords rdf:parseType="Resource">
+<rdf:value>education</rdf:value>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</etb:Keywords>
+<dc:description rdf:parseType="Resource">
+<rdf:value>Building with Books connects high school students to
+                      villages in developing countries through technology and curriculum enrichment
+                      materials and promotes community service through after-school clubs.</rdf:value>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</dc:description>
+<dc:publisher rdf:parseType="Resource">
+<rdf:value>Building with Books team</rdf:value>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</dc:publisher>
+<dc:contributor rdf:parseType="Resource">
+<rdf:value>Monica De Paola</rdf:value>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</dc:contributor>
+<dcq:created>
+<dcq:W3CDTF>
+<rdf:value>1999-05-31</rdf:value>
+</dcq:W3CDTF>
+</dcq:created>
+<dcq:modified>
+<dcq:W3CDTF>
+<rdf:value>1999-05-31</rdf:value>
+</dcq:W3CDTF>
+</dcq:modified>
+<dc:type>
+<dct:resource />
+</dc:type>
+<dc:identifier rdf:resource="http://www.buildingwithbooks.org/" />
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+<dcedu:audience rdf:parseType="Resource">
+<rdf:value>Research</rdf:value>
+<dc:language rdf:parseType="Resource">
+<dcq:RFC1766 rdf:parseType="Resource">
+<rdf:value>en</rdf:value>
+<rdfs:label>English</rdfs:label>
+<rdfs:isDefinedBy rdf:resource="http://www.ietf.org/rfc/rfc1766.txt" />
+</dcq:RFC1766>
+</dc:language>
+</dcedu:audience>
+</rdf:Description>
+</rdf:RDF>

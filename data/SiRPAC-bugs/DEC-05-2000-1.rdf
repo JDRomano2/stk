@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:a='http://www.example.org/'>
+  <a:id2 rdf:about='http://foo.bar.org/' 
+         rdf:bagID='bagID1' 
+         a:id1='id1'>
+    <a:id1 rdf:ID='idA' rdf:bagID='bagID1' />
+  </a:id2>
+</rdf:RDF>

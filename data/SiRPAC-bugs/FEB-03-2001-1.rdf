@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!--
+
+ The RDF below contains a syntax error: the content of the
+ typedNode rdf:value is a string and that is not legal - if
+ a typedNode contains content, the content must adhere to
+ the propertyElt rule.
+
+ The error for SiRPAC is that it falsely reports something
+ about the rdf:type typedNode may not contain an rdf:resource
+ attribute.
+
+-->
+  <rdf:RDF xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:vCard = "http://www.w3.org/2001/vcard-rdf/3.0#" >
+    <rdf:Description rdf:about = "http://qqqfoo.com/staff/corky">
+      <vCard:FN> Corky Crystal </vCard:FN>
+      <vCard:EMAIL>
+        <rdf:value> corky@qqqfoo.com </rdf:value>
+        <rdf:type 
+rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
+      </vCard:EMAIL>
+    </rdf:Description>
+  </rdf:RDF>

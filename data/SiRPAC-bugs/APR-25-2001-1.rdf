@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+    SiRPAC does not report an error if a rdf:li contains a rdf:id 
+    attribute and consequently generates bogus triples.
+-->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+ <rdf:Bag>
+      <rdf:li resource="some_resource" rdf:ID="some_id"/>
+ </rdf:Bag>
+
+</rdf:RDF>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!--
+  The following RDF is illegal - if a container [6.4] contains
+  content, the content must follow the member [6.28] production.
+-->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Bag>
+      <ns_1:prop_1>prop1 value</ns_1:prop_1>
+    </rdf:Bag>
+
+</rdf:RDF>

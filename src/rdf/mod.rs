@@ -1,0 +1,14 @@
+mod rdf {
+    pub fn parse_rdf() {
+        unimplemented!();
+    }
+
+    pub fn read_rdf() {
+        let 
+        unimplemented!();
+    }
+
+    pub fn write_rdf() {
+        unimplemented!();
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description about="http://www.cs.yale.edu/~dvm/unpop_planagent"
+		   xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		   xmlns     = "http://www.daml.org/2000/10/daml-ont#"
+		   xmlns:mcd = "http://www.cs.yale.edu/~dvm/yale-ont#">
+      <imports resource="file:yale-ont.daml"/>
+     <rdf:type resource="http://www.cs.yale.edu/~dvm/yale-ont.daml#Classical_planner"/>
+     <mcd:agent_comm_channel resource="http://www.coabs.org/grid"/>
+     <mcd:agent_notation resource="http://www.umbc.edu/KQML"/>
+     <mcd:agent_conversation xmlns:kqml="http://www.umbc.edu/KQML/syntax-ns#">
+	<rdf:Description>
+	   <mcd:Script >
+	      <mcd:sequence>
+		 <rdf:li>
+		    <mcd:agent_send kqml:performative="TELL">
+		       <kqml:content>create-session</kqml:content>
+		       <kqml:expected_reply>
+		          <mcd:Keyword_list>
+			     <mcd:header>SUCCESS</mcd:header>
+			     <mcd:field>
+				<mcd:keyword_pair>
+				   <mcd:field_keyword>:SESSION</mcd:field_keyword>
+				   <mcd:field_value ID="session-key">
+				      <kqml:type>symbol</kqml:type>
+				   </mcd:field_value>
+				</mcd:keyword_pair>
+			     </mcd:field>
+			  </mcd:Keyword_list>
+		       </kqml:expected_reply>
+		    </mcd:agent_send>
+		 </rdf:li>
+	      </mcd:sequence>
+	   </mcd:Script>
+     </rdf:Description>
+  </mcd:agent_conversation>
+  </rdf:Description>
+</rdf:RDF>

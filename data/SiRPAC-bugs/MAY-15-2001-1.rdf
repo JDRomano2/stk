@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--
+    SiRPAC generates the following triple [S, P, O] and it should not:
+      
+      online:genid1 http://www.w3.org/1999/02/22-rdf-syntax-ns#id Animal
+-->
+
+<rdf:RDF xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:daml="http://www.daml.org/2001/03/daml+oil#">
+
+<daml:Class rdf:id="Animal">
+  <rdfs:label>AnimaL</rdfs:label>
+  <rdfs:comment>This class of animals is illustrative of a number of ontological idioms.</rdfs:comment>
+</daml:Class>
+
+</rdf:RDF>

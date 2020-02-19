@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!-- 
+     Sample RDF from the PRISM specification - section 2.3
+     Version 1.0; April 9, 2001
+  -->
+
+<doc> 
+  <p>Fourscore and seven years ago, our fathers brought forth on this 
+     continent a new nation, conceived in liberty, and dedicated to the 
+     proposition that all men are created equal. 
+  </p> 
+
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+           xmlns:dc="http://purl.org/dc/elements/1.1/"> 
+    <rdf:Description rdf:about=""> 
+      <dc:description>Start of the Gettysburg Address</dc:description> 
+      <dc:creator>Abraham Lincoln</dc:creator> 
+    </rdf:Description> 
+  </rdf:RDF> 
+
+</doc>

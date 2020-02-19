@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!--
+  When sirpac parses the resource attribute in the prop_1 attribute,
+  it should handle the attribute as if it was defined as rdf:resource.
+-->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns_1="http://ns_1.org/" >
+
+  <rdf:Description about="http://x.y/foo.gif">
+    <ns_1:prop_1 resource="some_resource"/>
+  </rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- Tests for rdf:resource propAttrs in a propertyElt.  If a propertyElt
+     has a rdf:resource propAttr then all of the other property's propAttrs 
+     should have the value of the rdf:resource attribute as its subject.
+  -->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Description about="about_string">
+      <ns_1:prop_1 ns_1:att_1="att1 value" rdf:resource="resource_value_1"/>
+    </rdf:Description>
+
+    <rdf:Description>
+      <ns_1:prop_2 rdf:resource="resource_value_2" ns_1:att_2="att2 value"/>
+    </rdf:Description>
+
+  </rdf:RDF>

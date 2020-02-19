@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+From rjlaundr@ericir.syr.edu  Wed Jan  3 18:15:36 2001
+From: "Ryan Laundry" <rjlaundr@ericir.syr.edu>
+To: <barstow@w3.org>
+
+report=graphic feature does not work for more then one triple
+-->
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:ns1='http://geminfo.syr.edu/thesauri/NISOz3919#'>
+  <rdf:Description about='http://128.208.100.148/thesauri/eric?Diction'>
+    <ns1:RT rdf:resource='http://128.208.100.148/thesauri/eric?Articulation_(speech)'/>
+    <ns1:RT rdf:resource='http://128.208.100.148/thesauri/eric?Language_Fluency'/>
+    <ns1:RT rdf:resource='http://128.208.100.148/thesauri/eric?Language_Patterns'/>
+    <ns1:RT rdf:resource='http://128.208.100.148/thesauri/eric?Pronunciation'/>
+    <ns1:RT rdf:resource='http://128.208.100.148/thesauri/eric?Speech'/>
+    <ns1:RT rdf:resource='http://128.208.100.148/thesauri/eric?Speech_Tests'/>
+    <ns1:Label>Diction</ns1:Label>
+    <ns1:TYPE>Main</ns1:TYPE>
+  </rdf:Description>
+</rdf:RDF>
+
+

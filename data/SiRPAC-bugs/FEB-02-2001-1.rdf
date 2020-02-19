@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+  when sirpac parses this the last triple is
+    http://astro.temple.edu/~kasday/earl/alt.rdf#genid3,  e/toolUsed, e:wave
+  which is fine.
+
+  However, the graphical diagram shows genid4 instead of genid3
+
+-->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:e="e/" >
+
+  <rdf:Description about="http://x.y/foo.gif" bagID="statement_1">
+    <e:alt_status> missing  </e:alt_status>
+  </rdf:Description>
+
+  <rdf:Description aboutEach="#statement_1" >
+    <e:toolUsed> e:wave </e:toolUsed>
+  </rdf:Description>
+
+</rdf:RDF>

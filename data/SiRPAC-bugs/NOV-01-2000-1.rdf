@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- Test for typedNode production.  The triples for the typedNode
+     should contain one more than the similar Description element.  The
+     additional triple is an rdf:type.
+  -->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <ns_1:node1 rdf:about="some_resource_1" ns_1:propAttr1="propAttr1 value">
+      <ns_1:prop_1>prop1 value</ns_1:prop_1>
+    </ns_1:node1>
+
+    <rdf:Description rdf:about="some_resource_2" ns_1:propAttr1="propAttr1 value">
+      <ns_1:prop_1>prop1 value</ns_1:prop_1>
+    </rdf:Description>
+
+</rdf:RDF>

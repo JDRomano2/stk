@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- 
+     Test case for quote handling within Literals for
+     the servlet.
+  -->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ns_1="http://www.ns_1.org/ns_1#">
+
+    <rdf:Description ID="ID_string_1">
+      <ns_1:prop_1>Double quote: "</ns_1:prop_1>
+    </rdf:Description>
+
+    <rdf:Description ID="ID_string_2">
+      <ns_1:prop_2>Single quote: '</ns_1:prop_2>
+    </rdf:Description>
+
+  </rdf:RDF>

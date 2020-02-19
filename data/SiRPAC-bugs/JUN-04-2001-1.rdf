@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+    SiRPAC generates the following bogus error message:
+
+       Unresolved internal reference to books
+
+    for legal RDF.
+  -->
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ex="http://example/vocab#">
+
+  <r:Description r:about="#books"
+       xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <r:type r:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" />
+    <r:_1 r:resource="#book1" />
+    <ex:member2 r:resource="#book2" />
+    <r:_3 r:resource="#book3" />
+  </r:Description>
+
+  <rdf:Description rdf:aboutEach="#books">
+    <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">all
+    mine!</dc:rights>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example/vocab#member2">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#_2"/>
+  </rdf:Description>
+</rdf:RDF>
+

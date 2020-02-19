@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+From johan.hjelm@era-t.ericsson.se  Fri Jan  5 00:57:54 2001
+From: Johan Hjelm <johan.hjelm@era-t.ericsson.se>
+
+report=File validated, but the graph section said "Graph of the data model
+
+The graph image file is empty. "
+-->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:ccpp="http://www.w3.org/2000/07/04-ccpp#"
+     xmlns:uaprof="http://www.wapforum.org/UAPROF/ccppschema-19991014#">
+
+  <Description about="http://www.devicecapabilities.org/MyProfile">
+    <ccpp:component>
+      <Description about="http://www.devicecapabilities.org/TerminalHardware">
+        <type resource="http://www.devicecapabilities.org/Schema#HardwarePlatform" />
+        <ccpp:Defaults>
+          <Description>
+            <type resource="http://www.devicecapabilities.org/Schema#HardwarePlatform" />
+            <uaprof:CPU>PPC</uaprof:CPU>
+            <uaprof:ScreenSize>320x200</uaprof:ScreenSize>
+          </Description>
+        </ccpp:Defaults>
+        <uaprof:ScreenSize>640x400</uaprof:ScreenSize> 
+      </Description>
+    </ccpp:component>
+
+    <ccpp:component> 
+      <Description about="http://www.devicecapabilities.org/TerminalSoftware">
+        <type resource="http://www.devicecapabilities.org/Schema#SoftwarePlatform" /> 
+        <ccpp:Defaults>
+          <Description>
+            <type resource="http://www.devicecapabilities.org/Schema#SoftwarePlatform" /> 
+            <uaprof:OSName>EPOC</uaprof:OSName>
+            <uaprof:OSVersion>2.0</uaprof:OSVersion> 
+            <uaprof:OSVendor>Symbian</uaprof:OSVendor> 
+          </Description> 
+        </ccpp:Defaults>
+      </Description> 
+    </ccpp:component>
+
+    <ccpp:component>
+      <Description about="http://www.devicecapabilities.org/Browser"> 
+        <type resource="http://www.devicecapabilities.org/Schema#BrowserUA" />
+        <ccpp:Defaults>
+          <Description>
+            <type resource="http://www.devicecapabilities.org/Schema#BrowserUA" />
+            <uaprof:BrowserName>Mozilla</uaprof:BrowserName>
+            <uaprof:BrowserVersion>5.0</uaprof:BrowserVersion>
+            <uaprof:CcppAccept>
+              <Bag>
+                <li>text/plain</li>
+                <li>text/vnd.wap.wml</li>
+              </Bag>
+            </uaprof:CcppAccept>
+          </Description>
+        </ccpp:Defaults>
+        <uaprof:CcppAccept>
+          <Bag>
+            <li>text/plain</li>
+            <li>text/vnd.wap.wml</li>
+            <li>text/html</li>
+          </Bag>
+        </uaprof:CcppAccept>
+      </Description> 
+    </ccpp:component>
+  </Description>
+</RDF>
+
+

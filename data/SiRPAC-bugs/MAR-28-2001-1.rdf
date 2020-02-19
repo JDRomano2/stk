@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!-- 
+    The triples generated using the abbreviated syntax should
+    be identical to the triples created with the non-abbreviated
+    syntax.  In this case, the two descriptions should produce 
+    identical triples and SiRPAC generates different triples -
+    the property names are not the same (property "value" is 
+    namespace-qualifed in one triple and not qualified in
+    the other).
+-->
+
+<rdf:RDF
+     xmlns="http://www.foo.org/foo-ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description about="http://www.foo.org/res">
+  <prop1 rdf:parseType="Resource">
+    <prop2 rdf:parseType="Resource">
+      <value>6</value>
+    </prop2>
+  </prop1>
+</rdf:Description>
+
+<rdf:Description about="http://www.foo.org/res">
+  <prop1 rdf:parseType="Resource">
+    <prop2 value="6"/>
+  </prop1>
+</rdf:Description>
+
+</rdf:RDF>

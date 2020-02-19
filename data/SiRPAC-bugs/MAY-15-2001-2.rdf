@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--
+    When streaming mode is off, SiRPAC generates an error for the
+    following legal RDF.
+-->
+
+<rdf:RDF xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:daml="http://www.daml.org/2001/03/daml+oil#">
+
+<daml:Class rdf:id="Animal">
+  <rdfs:label>AnimaL</rdfs:label>
+  <rdfs:comment>This class of animals is illustrative of a number of ontological idioms.</rdfs:comment>
+</daml:Class>
+
+<daml:Class rdf:about="#Animal">
+  <rdfs:comment> Another Comment </rdfs:comment>
+</daml:Class>
+
+</rdf:RDF>
